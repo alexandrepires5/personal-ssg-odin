@@ -23,6 +23,24 @@ parse_inline :: proc(s: string) -> string {
             }
             in_bold = !in_bold
             i += 2
+        } else if s[i] == '[' {
+            close_bracket := strings.index(s[i:], "]")
+            if close_bracket != -1 {
+                if i + close_bracket + 1 < len(s) && s[i+close_bracket+1] == '(' {
+                    close_paren := strings.index(s[i+close_bracket+1:], ")")
+                    if close_paren != -1 {
+                        text := s[i+1 : i+close_bracket]
+                        url := s[i+close_bracket+2 : i+close_bracket+1+close_paren]
+                        
+                        fmt.sbprintf(&b, "<a href=\"%s\">%s</a>", url, text)
+                        
+                        i += close_bracket + 1 + close_paren + 1
+                        continue
+                    }
+                }
+            }
+            strings.write_byte(&b, s[i])
+            i += 1
         } else {
             strings.write_byte(&b, s[i])
             i += 1

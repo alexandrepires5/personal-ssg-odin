@@ -17,6 +17,7 @@ HTML_BOILERPLATE :: `<!DOCTYPE html>
         --code-bg: #e2e8f0;
     }}
     * {{ box-sizing: border-box; }}
+    p {{ text-align: justify; }}
     body {{
         font-family: 'Inter', system-ui, -apple-system, sans-serif;
         line-height: 1.6;
