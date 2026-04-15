@@ -73,37 +73,25 @@
     </nav>
     <main>
         <h1>Building our own Static Site Generator</h1>
-<p>This post covers how the <strong>SSG Engine</strong> operates under the hood. The system uses a block-aware markdown parser.</p>
+<p>This post covers how the <strong>SSG Engine</strong> operates under the hood. I decided to use this project as a way to learn the Odin language, as well as make something unique for my own cv and thoughts, The system uses a block-aware markdown parser.</p>
 <h2>Architecture Diagram</h2>
-<p>The system follows a simple linear flow:</p>
+<p>The system follows a simple linear flow, since basically the conversion from markdown to HTML is straightforward:</p>
 <pre><code>
 graph TD
-    A[Markdown Files] --&gt; B[Frontmatter Parser]
+    A[Markdown Files] --&gt; B[Title Extractor]
     B --&gt; C{Block State Machine}
-    C --&gt;|Prose| D[Inline Formatter]
-    C --&gt;|Mermaid| E[Graph HTML]
-    C --&gt;|JSON| F[Data Buffer]
-    D --&gt; G[SGML Templating]
+    C --&gt;|Prose & Lists| D[Inline Formatter]
+    C --&gt;|Headings| E[HTML Headings]
+    C --&gt;|Code| F[HTML Pre]
+    D --&gt; G[HTML Boilerplate]
     E --&gt; G
     F --&gt; G
-    G --&gt; H[Output Public Directory]
+    G --&gt; H[Output Docs Directory]
 </code></pre>
-<h2>Configuration Data</h2>
-<p>Here is a block to test the JSON reference parser:</p>
-<pre><code>
-{
-  "repository": "personal-ssg-odin",
-  "language": "Odin",
-  "features": [
-    "markdown",
-    "mermaid",
-    "templates"
-  ]
-}
-</code></pre>
-<p>The system is now back into PROSE state. <strong>Testing bold text</strong> again to make sure inline formatting doesn't break after exiting a code block state.</p>
+<h2>Inline Formatting</h2>
+<p>The system parses basic markdown features like <strong>bold text</strong> and links using an internal inline parser string builder. The parser transitions back into PROSE state after lists or code blocks, ensuring inline tags are always properly resolved.</p>
 <h2>Conclusion</h2>
-<p>Building your own SSG in Odin is fun because of the explicit memory layout and fine-grained control over parsing.</p>
+<p>Building your own SSG is very simple and for now, it fits my current needs. If you have a minimal of expertise, you can just build your own things, instead of relying over more complex solutions, where you just use 5-10% of the features, and have to deal with the complexity of the tool. If my needs increase in the future, I will just need to adapt the code of the SSG.</p>
 
     </main>
 </body>

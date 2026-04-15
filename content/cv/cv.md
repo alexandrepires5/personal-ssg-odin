@@ -26,7 +26,7 @@ Results-driven AI and Robotics Engineer with a Master's degree in Electronic and
 **Xesol Innovation**
 **03/2018 – 12/2021 | Vigo, Spain**
 - Managed a 5-person engineering team to successfully deliver an ADAS (Advanced Driver Assistance System) for an EU-financed project.
-- Optimized the entire software and AI pipeline, achieving a **4x reduction in hardware costs** while strictly maintaining expected real-time performance.
+- Optimized the entire software and AI pipeline, achieving a 4x reduction in hardware costs while strictly maintaining expected real-time performance.
 - Engineered and rigorously tested driver fatigue and distraction detection systems, leveraging advanced image processing on ARM (A53) and x86 embedded platforms.
 - Architected the high-level design of a robust middleware framework tailored for critical real-time systems.
 - Developed and deployed high-accuracy perception AI models for complex environmental analysis.
@@ -58,10 +58,10 @@ Results-driven AI and Robotics Engineer with a Master's degree in Electronic and
 
 **Languages:** C++, C, Python, Odin, Zig, Elixir, JavaScript, SQL
 **Databases:** PostgreSQL, MongoDB
-**AI & Frameworks:** PyTorch, TinyGrad, OpenCV, React, NiceGUI, FastAPI
-**Technologies:** Linux, Docker, Git, CMake, OpenMP (Parallel Programming), OpenCL
+**AI & Frameworks:** PyTorch, TinyGrad, OpenCV, React, NiceGUI, FastAPI, ROS
+**Technologies:** Linux, Docker, Git, CMake, OpenMP
 **Hardware / Architecture:** ARM, x86, Raspberry Pi, ESP32, SIMD (Vectorization)
-**Core Domains:** Artificial Intelligence, Computer Vision, Edge AI, Embedded Systems, Robotics, Control Systems, Sensor Fusion, ADAS & Autonomous Driving, Data Analytics
+**Core Domains:** Artificial Intelligence, Computer Vision, Edge AI, Embedded Systems, Robotics, Control Systems, Sensor Fusion, ADAS & Autonomous Driving, Data Analytics, Data Science
 **Methodologies:** V Cycle (ISO 26262), Unit & System Testing, Requirements Analysis, Agile, Scrum
 
 ## Languages
