@@ -74,6 +74,7 @@ parse_markdown :: proc(md: string) -> (html: string, title: string) {
     b := strings.builder_make()
     in_list := false
     in_code := false
+    in_mermaid := false
     
     for line in lines {
         trimmed_right := line
@@ -85,20 +86,35 @@ parse_markdown :: proc(md: string) -> (html: string, title: string) {
         
         if strings.has_prefix(trimmed, "```") {
             if in_code {
-                strings.write_string(&b, "</code></pre>\n")
+                if in_mermaid {
+                    strings.write_string(&b, "</pre>\n")
+                    in_mermaid = false
+                } else {
+                    strings.write_string(&b, "</code></pre>\n")
+                }
                 in_code = false
             } else {
-                strings.write_string(&b, "<pre><code>\n")
+                if strings.has_prefix(trimmed, "```mermaid") {
+                    strings.write_string(&b, "<pre class=\"mermaid\">\n")
+                    in_mermaid = true
+                } else {
+                    strings.write_string(&b, "<pre><code>\n")
+                }
                 in_code = true
             }
             continue
         }
         
         if in_code {
-            escaped, _ := strings.replace_all(trimmed_right, "<", "&lt;")
-            escaped2, _ := strings.replace_all(escaped, ">", "&gt;")
-            strings.write_string(&b, escaped2)
-            strings.write_string(&b, "\n")
+            if in_mermaid {
+                strings.write_string(&b, trimmed_right)
+                strings.write_string(&b, "\n")
+            } else {
+                escaped, _ := strings.replace_all(trimmed_right, "<", "&lt;")
+                escaped2, _ := strings.replace_all(escaped, ">", "&gt;")
+                strings.write_string(&b, escaped2)
+                strings.write_string(&b, "\n")
+            }
             continue
         }
         
@@ -137,7 +153,11 @@ parse_markdown :: proc(md: string) -> (html: string, title: string) {
         strings.write_string(&b, "</ul>\n")
     }
     if in_code {
-        strings.write_string(&b, "</code></pre>\n")
+        if in_mermaid {
+            strings.write_string(&b, "</pre>\n")
+        } else {
+            strings.write_string(&b, "</code></pre>\n")
+        }
     }
     
     html = strings.to_string(b)

@@ -10,3 +10,4 @@ Hierarchical index of all project knowledge.
 ## Directories
 - `plans/`: Roadmaps and TODOs.
 - `tmp/`: Session scraps and handover documents (git-ignored).
+- `parser/`: Parsing logic and Markdown handling including [Parser Summary](parser/summary.md).
