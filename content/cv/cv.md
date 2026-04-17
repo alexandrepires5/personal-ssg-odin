@@ -1,44 +1,43 @@
 # Alexandre Pires
 ## AI & Robotics Engineer
 
-🔗 [linkedin.com/in/alexandrepires1993](https://linkedin.com/in/alexandrepires) | 🐙 [github.com/alexandrepires5](https://github.com/alexandrepires5)
+🔗 [linkedin.com/in/alexandrepires1993](https://linkedin.com/in/alexandrepires) | 🐙 [github.com/alexandrepires5](https://github.com/alexandrepires5) | 💼 [Upwork Profile](https://www.upwork.com/freelancers/~01003a2f5fa865d01d?mp_source=share)
 
-Results-driven AI and Robotics Engineer with a Master's degree in Electronic and Computer Engineering. Expertise in Artificial Intelligence, Computer Vision, Embedded Systems, robotics, and high-performance computing. Proven track record of leading technical teams, architecting scalable software solutions, and delivering optimized, cost-effective AI systems for the automotive and industrial sectors. Currently living in Porto, Portugal.
+Results-driven AI and Robotics Engineer with a Master's degree in Electronic and Computer Engineering. Expertise in Artificial Intelligence, Computer Vision, Edge AI, and Embedded Systems. Proven track record of leading technical teams, architecting scalable software solutions, and delivering optimized, cost-effective AI systems from concept to production. Adept at translating complex business needs into high-performance technical solutions for corporate clients and global freelance consulting engagements. Currently based in Porto, Portugal.
 
 ## Work Experience
 
 ### AI Engineer
 **Polux Tecnologia S.L**
 **09/2024 – Present | Zaragoza, Spain**
-- Architected and deployed production-ready embedded systems for multiple enterprise clients, ensuring reliability and high performance.
-- Designed and implemented custom AI models and comprehensive data analytics pipelines to monitor critical KPIs, significantly optimizing internal operations and client manufacturing processes.
-- Spearheaded the adoption and integration of Generative AI tools across the organization, streamlining electronics manufacturing workflows and boosting team productivity.
+- Deployed production-ready embedded AI systems for enterprise clients, ensuring high reliability and optimized performance in manufacturing environments.
+- Developed custom computer vision models and data analytics pipelines to monitor critical KPIs, driving tangible improvements in client operational efficiency.
+- Led the integration of Generative AI tools across the engineering division, streamlining electronics manufacturing workflows and accelerating development cycles.
 
 ### Technical Lead
 **Xesol Innovation**
 **12/2021 – 08/2024 | Vigo, Spain**
-- Directed the technical department in the end-to-end delivery of AI and embedded computing systems, successfully bridging the gap between business requirements and technical execution.
-- Designed and engineered multiple computer vision and AI-driven solutions explicitly optimized for low-resource environments within the industrial sector.
-- Defined the overarching technology stack and architectural standards for all company projects, ensuring scalability, maintainability, and cross-project compatibility.
-- Actively contributed to hands-on development across various core modules, resolving complex technical bottlenecks to meet strict project deadlines.
+- Directed the technical department through the end-to-end lifecycle of AI and embedded systems, consistently translating complex business requirements into scalable technical architectures.
+- Engineered high-performance, resource-constrained computer vision solutions specifically tailored for low-power edge devices in the industrial sector.
+- Established the company-wide technology stack and architectural standards, directly improving cross-project maintainability and deployment scalability.
+- Resolved critical technical bottlenecks through hands-on core module development, ensuring strict adherence to project deadlines and client deliverables.
 
 ### Software Engineer
 **Xesol Innovation**
 **03/2018 – 12/2021 | Vigo, Spain**
-- Managed a 5-person engineering team to successfully deliver an ADAS (Advanced Driver Assistance System) for an EU-financed project.
-- Optimized the entire software and AI pipeline, achieving a 4x reduction in hardware costs while strictly maintaining expected real-time performance.
-- Engineered and rigorously tested driver fatigue and distraction detection systems, leveraging advanced image processing on ARM (A53) and x86 embedded platforms.
-- Architected the high-level design of a robust middleware framework tailored for critical real-time systems.
-- Developed and deployed high-accuracy perception AI models for complex environmental analysis.
+- Orchestrated a 5-person engineering team to successfully deliver a production-grade ADAS (Advanced Driver Assistance System) for a major EU-financed initiative.
+- Achieved a 4x reduction in hardware costs by aggressively optimizing the AI software pipeline, all while maintaining strict real-time latency requirements.
+- Built and validated real-time driver fatigue and distraction detection models, deploying advanced image processing pipelines onto ARM (A53) and x86 edge platforms.
+- Architected a highly robust, fault-tolerant middleware framework designed specifically for mission-critical real-time environments.
+- Deployed high-accuracy perception AI models to production for complex autonomous environmental analysis.
 
 ### Software Engineer
 **CTAG - Centro Tecnológico de Automoción de Galicia**
 **12/2016 – 03/2018 | Vigo, Spain**
-- Contributed to the development of cutting-edge ADAS and Autonomous Driving systems for the automotive industry.
-- Designed and implemented a robust Kalman Filter algorithm, ensuring continuous and highly reliable position control during GPS signal loss.
-- Developed the critical Range Detection module for Valeo's Lidar Sensor, directly contributing to technology intended for Honda vehicles.
-- Executed comprehensive testing pipelines including Unit, High-Level Design (HLD), Software, and System requirement validation strictly following V-Cycle (ISO 26262) methodologies.
-- Created automated diagnostic and KPI-tracking scripts, significantly reducing debugging time and improving behavior analysis.
+- Engineered core components for next-generation ADAS and Autonomous Driving systems complying with stringent automotive industry standards.
+- Designed a resilient Kalman Filter algorithm to guarantee continuous, high-accuracy position control during intermittent GPS signal loss.
+- Developed the critical Range Detection module for Valeo's Lidar Sensor, directly integrating into production technology for Honda vehicles.
+- Executed rigorous V-Cycle (ISO 26262) automated testing pipelines, building KPI-tracking systems that markedly reduced debugging overhead and improved behavioral analysis.
 
 ## Education
 
@@ -57,8 +56,9 @@ Results-driven AI and Robotics Engineer with a Master's degree in Electronic and
 ## Skills
 
 **Languages:** C++, C, Python, Odin, Zig, Elixir, JavaScript, SQL
+**AI & ML Frameworks:** PyTorch, TinyGrad, OpenCV, ROS
+**Web & Backend Frameworks:** React, NiceGUI, FastAPI
 **Databases:** PostgreSQL, MongoDB
-**AI & Frameworks:** PyTorch, TinyGrad, OpenCV, React, NiceGUI, FastAPI, ROS
 **Technologies:** Linux, Docker, Git, CMake, OpenMP
 **Hardware / Architecture:** ARM, x86, Raspberry Pi, ESP32, SIMD (Vectorization)
 **Core Domains:** Artificial Intelligence, Computer Vision, Edge AI, Embedded Systems, Robotics, Control Systems, Sensor Fusion, ADAS & Autonomous Driving, Data Analytics, Data Science
